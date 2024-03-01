@@ -58,3 +58,10 @@
 //     }
 //     return 0;
 // } 
+// #include<stdio.h>
+// int main()
+// {
+// int i , arr[5];
+// printf("%d%d",arr+1,&arr+1);
+// return 0;
+// }

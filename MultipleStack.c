@@ -117,7 +117,7 @@ while(1){
    printf("6. Peek Data from Stack 1: \n");
    printf("7. Show Data of Stack 1: \n");
    printf("8. Show Data of stack 2: \n");
-   printf("9. Exit \n);
+   printf("9. Exit \n");
    int choice;
    scanf("%d",&choice);
    switch (choice){
@@ -130,7 +130,7 @@ while(1){
         case 7 : Show1(); break;
         case 8 : Show2(); break;
         case 9 : exit(0); break;
-        default;
+        default:
         printf("Invalid Choice");
         break;
    }

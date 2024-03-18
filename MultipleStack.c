@@ -117,17 +117,22 @@ while(1){
    printf("6. Peek Data from Stack 1: \n");
    printf("7. Show Data of Stack 1: \n");
    printf("8. Show Data of stack 2: \n");
+   printf("9. Exit \n);
    int choice;
    scanf("%d",&choice);
    switch (choice){
         case 1 : Push1(); break;
         case 2 : Push2(); break;
-        case 3 : Pop1(); break;
-        case 4: Pop2(); break;
-        case 5: Peek1(); break;
-        case 6: Peek2(); break;
-        case 7: Show1(); break;
-        case 8: Show2(); break;
+        case 3 : Pop1();  break;
+        case 4 : Pop2();  break;
+        case 5 : Peek1(); break;
+        case 6 : Peek2(); break;
+        case 7 : Show1(); break;
+        case 8 : Show2(); break;
+        case 9 : exit(0); break;
+        default;
+        printf("Invalid Choice");
+        break;
    }
 }
 }

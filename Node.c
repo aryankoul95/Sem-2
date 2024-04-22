@@ -20,5 +20,7 @@ int main()
     scanf("%d",&t2->data);
     t2->next = NULL;
     t1->next=t2;
-    printf("%d -> %d -> %d",t->data,t1->data,t2->data);  
+    printf("%d -> %d -> %d\n",t->data,t1->data,t2->data);  
+    // printf("%d -> %d -> %d\n",t->data,t->next->data,t->next->next->data);
+    return 0;
 }

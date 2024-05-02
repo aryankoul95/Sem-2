@@ -26,6 +26,54 @@ void createList(){
     temp=newNode;
    }
 }
+void deleteNodeAtAnyPos(){
+    if(head==NULL)
+    printf("List is Empty");
+    else{
+        int pos;
+        printf("Enter position");
+        scanf("%d",&pos);
+        if(pos==1)
+        head=head->next;
+        else {
+        int cnt=1;
+        struct Node *temp=head;
+        while(temp->next!=NULL){
+            if(cnt==pos-1)
+            break;
+            else{
+                cnt++;
+                temp=temp->next;
+            }
+        }   
+        if(temp->next==NULL)
+        printf("Invalid Position");
+        else{
+            temp->next=temp->next->next;
+        }
+ }
+}
+}
+void search(){
+    if(head==NULL)
+    printf("list is empty");
+    else{
+        int val;
+        printf("Enter Searching Element :");
+        scanf("%d",&val);
+        struct Node *temp=head;
+        while(temp!=NULL){
+            if(temp->data==val)
+            break;
+            else
+            temp=temp->next;
+        }
+        if(temp==NULL)
+        printf("Not Found!!\n");
+        else
+        printf("Found!!!\n");
+    }
+}
 void display(){
     //1. is empty by head null
     if(head==NULL)
@@ -116,8 +164,13 @@ int main(){
     break;
     case 3:
     insertNodeatanypos();
+    break;
     case 4:
+    deleteNodeAtAnyPos();
+    break;
     case 5:
+    search();
+    break;
     case 6:
     display();
     break;

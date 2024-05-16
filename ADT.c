@@ -19,7 +19,6 @@ void create(){
         }
     }
 }
-
 void DisplayList(){
     int i;
     if(size==0)

@@ -14,7 +14,6 @@
 //     // printf("Marks =%f\n",s1.marks);
 // // return 0;
 // // }
-
 // #include<stdio.h>
 // struct student{
 //     int rollnumber;

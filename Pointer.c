@@ -8,7 +8,6 @@
 //     printf("Sum = %d",*p1+*p2);
 //     return 0;
 // }
-
 // Wap to Perform the Swapping of Two Numbers using Pointers
 // #include<stdio.h>
 // int main()
